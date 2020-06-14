@@ -76,9 +76,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -508,7 +510,6 @@
     <ClInclude Include="DIBAPI.H" />
     <ClInclude Include="DIBUTIL.H" />
     <ClInclude Include="DISPLAY.H" />
-    <ClInclude Include="DLLInterface.h" />
     <ClInclude Include="DOOR.H" />
     <ClInclude Include="DPMI.H" />
     <ClInclude Include="DRIVE.H" />
@@ -541,6 +542,7 @@
     <ClInclude Include="HOUSE.H" />
     <ClInclude Include="HSV.H" />
     <ClInclude Include="ICONLIST.H" />
+    <ClInclude Include="include\DLLInterface.h" />
     <ClInclude Include="INFANTRY.H" />
     <ClInclude Include="INI.H" />
     <ClInclude Include="INLINE.H" />
